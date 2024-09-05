@@ -7,6 +7,10 @@ const userSchema = new Schema({
     profileImg:{
         type:String
     },
+    age:{
+        type:Number},
+    gender:{type:String , enum:['male','female','other']},
+    address:{type:String},
     number: { type: String },
     email: { type: String, required: true, unique: true },
     resetOTP: { type: String },
